@@ -50,6 +50,10 @@ section:focus {
    background-color: rgb(216, 214, 214);
 }
 
+h2 {
+   flex-direction: column;
+}
+
 nav ul {
    display: flex;
    justify-content: center;
