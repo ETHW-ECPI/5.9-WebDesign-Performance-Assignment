@@ -51,12 +51,14 @@ section:focus {
    background-color: rgb(216, 214, 214);
 }
 
-h2 {
+section h2 {
    position: absolute;
+   top: 0;
+   text-align: center;
    z-index: 1;
 }
 
-#blog {
+section#blog {
    flex-shrink: 2;
 }
 
@@ -86,6 +88,10 @@ nav ul li a:hover {
 form {
    display: flex;
    flex-direction: column;
+}
+
+textarea {
+   resize: none;
 }
 
 label {
