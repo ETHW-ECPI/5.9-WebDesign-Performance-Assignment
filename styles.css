@@ -52,10 +52,7 @@ section:focus {
 }
 
 section h2 {
-   position: absolute;
-   top: 0;
    text-align: center;
-   z-index: 1;
 }
 
 section#blog {
