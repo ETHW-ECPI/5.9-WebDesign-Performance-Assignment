@@ -74,11 +74,6 @@ article {
    justify-content: center;
 }
 
-p {
-   margin: 0px;
-   padding: 0px;
-}
-
 nav ul {
    display: flex;
    justify-content: center;
