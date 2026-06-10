@@ -39,7 +39,6 @@ footer {
 
 section {
    background-color: white;
-   text-align: center;
    display: flex;
    border-radius: 3px;
    transition: background-color 3s;
@@ -51,7 +50,14 @@ section:focus {
 }
 
 h2 {
-   flex-direction: column;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+#blog {
+   flex-shrink: 2;
 }
 
 nav ul {
