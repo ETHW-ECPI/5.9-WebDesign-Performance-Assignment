@@ -82,7 +82,7 @@ nav ul li a:hover {
    animation: navHover 0.5s ease-in forwards;
 }
 
-.contact-form {
+form {
    flex-direction: column;
 }
 
