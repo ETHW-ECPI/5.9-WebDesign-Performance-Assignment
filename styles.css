@@ -17,16 +17,6 @@
    }
 }
 
-@keyframes navHover {
-   from {
-      background: white;
-   }
-
-   to {
-      background: rgb(216, 214, 214);
-   }
-}
-
 body {
    animation: fadeIn 1s ease-in forwards;
    font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +40,7 @@ footer {
 section {
    background-color: white;
    text-align: center;
-   display: block;
+   display: flex;
    border-radius: 3px;
    transition: background-color 3s;
 }
@@ -76,13 +66,15 @@ nav ul li a {
    text-decoration: none;
    display: block;
    border-radius: 4px;
+   transition: background-color 1s;
 }
 
 nav ul li a:hover {
-   animation: navHover 0.5s ease-in forwards;
+   background-color: rgb(216, 214, 214);
 }
 
 form {
+   display: flex;
    flex-direction: column;
 }
 
