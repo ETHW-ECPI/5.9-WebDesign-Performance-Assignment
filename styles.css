@@ -6,3 +6,111 @@
    
    Filename: styles.css
 */
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+@keyframes navHover {
+   from {
+      background: white;
+   }
+
+   to {
+      background: rgb(190, 188, 188);
+   }
+}
+
+body {
+   animation: fadeIn 1s ease-in forwards;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: white;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header {
+   text-align: center;
+}
+
+section {
+   background-color: white;
+   text-align: center;
+   display: block;
+   border-radius: 3px;
+   transition: background-color 3s;
+}
+
+section:hover,
+section:focus {
+   background-color: rgb(190, 188, 188);
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+nav ul li a {
+   margin: 0px 15px;
+   color: black;
+   background-color: white;
+   padding: 12px 20px;
+   text-decoration: none;
+   display: block;
+   border-radius: 4px;
+}
+
+nav ul li a:hover {
+   animation: navHover 1s ease-in;
+}
+
+/* Screen Size Stuff */
+/* Smaller Screens */
+@media (max-width: 768px) {
+   article {
+      flex-direction: column;
+   }
+}
+
+/* Wider Screens */
+@media (min-width: 768px) {
+   article {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+   body {
+      font-size: 16px;
+   }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   body {
+      font-size: 18px;
+   }
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+   body {
+      font-size: 18px;
+   }
+}
