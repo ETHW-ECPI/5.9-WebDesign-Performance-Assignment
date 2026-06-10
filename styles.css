@@ -59,6 +59,8 @@ section>h2 {
 article {
    display: flex;
    width: 50%;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 p {
