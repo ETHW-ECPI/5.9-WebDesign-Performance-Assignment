@@ -36,9 +36,11 @@ header {
 }
 
 footer {
+   display: flex;
    text-align: center;
    justify-content: center;
-   background-color: rgb(218, 237, 255);
+   color: white;
+   background-color: rgb(37, 71, 104);
    border-radius: 4px;
    max-width: 30%;
 }
@@ -53,13 +55,9 @@ section {
    transition: background-color 1.5s;
 }
 
-section:hover,
-section:focus {
-   background-color: rgb(216, 214, 214);
-}
-
 section>h2 {
    text-align: center;
+   border-bottom: 3.5px solid rgb(37, 71, 104);
 }
 
 section#blog {
@@ -69,9 +67,8 @@ section#blog {
 article {
    display: flex;
    max-width: 50%;
-   flex-direction: row;
-   flex-wrap: wrap;
-   background-color: rgb(218, 237, 255);
+   color: white;
+   background-color: rgb(37, 71, 104);
    border-radius: 4px;
    justify-content: center;
 }
@@ -107,8 +104,38 @@ nav ul li a:hover {
 form {
    display: flex;
    flex-direction: column;
-   background-color: rgb(218, 237, 255);
+   color: white;
+   background-color: rgb(37, 71, 104);
    border-radius: 4px;
+}
+
+input,
+textarea {
+   transition: #c9c9c9 0.3s ease;
+}
+
+input:hover,
+textarea:hover {
+   border-color: #888;
+}
+
+input:focus,
+textarea:focus {
+   border-color: #007BFF;
+   outline: none;
+}
+
+button[type="submit"] {
+   transition: #c9c9c9 0.3s ease;
+}
+
+button[type="submit"]:hover {
+   background-color: #0056b3;
+}
+
+button[type="submit"]:focus {
+   background-color: #004494;
+   outline: none;
 }
 
 textarea {
@@ -124,7 +151,6 @@ label {
 @media (max-width: 768px) {
    article {
       flex-direction: column;
-      flex-wrap: wrap;
    }
 }
 
@@ -132,7 +158,6 @@ label {
 @media (min-width: 768px) {
    article {
       flex-direction: row;
-      flex-wrap: wrap;
    }
 }
 
