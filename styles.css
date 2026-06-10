@@ -52,13 +52,18 @@ section:focus {
    background-color: rgb(216, 214, 214);
 }
 
-section > h2 {
+section>h2 {
    text-align: center;
 }
 
 article {
    display: flex;
-   flex-shrink: 2;
+   width: 50%;
+}
+
+p {
+   margin: 0px;
+   padding: 0px;
 }
 
 nav ul {
