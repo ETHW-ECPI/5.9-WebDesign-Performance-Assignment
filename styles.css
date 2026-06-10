@@ -59,6 +59,10 @@ section#blog {
    flex-shrink: 2;
 }
 
+article {
+   display: flex;
+}
+
 nav ul {
    display: flex;
    justify-content: center;
