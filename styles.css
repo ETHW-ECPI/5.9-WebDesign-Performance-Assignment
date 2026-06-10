@@ -37,7 +37,8 @@ header {
 
 footer {
    text-align: center;
-   background-color: rgb(102, 125, 136);
+   justify-content: center;
+   background-color: rgb(218, 237, 255);
    border-radius: 4px;
    max-width: 30%;
 }
@@ -61,13 +62,18 @@ section>h2 {
    text-align: center;
 }
 
+section#blog {
+   max-width: 50%
+}
+
 article {
    display: flex;
    max-width: 50%;
    flex-direction: row;
    flex-wrap: wrap;
-   background-color: rgb(102, 125, 136);
+   background-color: rgb(218, 237, 255);
    border-radius: 4px;
+   justify-content: center;
 }
 
 p {
@@ -101,7 +107,7 @@ nav ul li a:hover {
 form {
    display: flex;
    flex-direction: column;
-   background-color: rgb(102, 125, 136);
+   background-color: rgb(218, 237, 255);
    border-radius: 4px;
 }
 
